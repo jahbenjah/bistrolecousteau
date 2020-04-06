@@ -12,49 +12,50 @@
   <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
-
-  "@context": "https://schema.org",
-  "@type": "Restaurant",
-  "image": [
-  "https://bistrolecousteau.com/photos/1x1/photo.jpg",
-  "https://bistrolecousteau.com/photos/4x3/photo.jpg",
-  "https://bistrolecousteau.com/photos/16x9/photo.jpg"
-  ],
-  "@id": "https://bistrolecousteau.com/",
-  "name": "Bistró Le Cousteau",
-  "address": {
-  "@type": "PostalAddress",
-  "streetAddress": "Blvd. Benito Juárez 184",
-  "addressLocality": "Zona Centro",
-  "addressRegion": "Rosarito, B.C.",
-  "postalCode": "22710",
-  "addressCountry": "MX"
-  },  
-  "geo": {
-  "@type": "GeoCoordinates",
-  "latitude": 32.3398382,
-  "longitude": -117.0579843
-  },
-  "url": "http://www.example.com/restaurant-locations/manhattan",
-  "telephone": "66126122655",
-  "servesCuisine": "French",
-  "priceRange": "$$",
-  "openingHoursSpecification": [
-  {
-  "@type": "OpeningHoursSpecification",
-  "dayOfWeek": [
-  "Tuesday",
-  "Wednesday",
-  "Thursday",
-  "Friday",
-  "Saturday",
-  "Sunday"
-  ],
-  "opens": "12:00",
-  "closes": "22:00"
-  },
-  "menu": "https://bistrolecousteau.com/menu",
-  "acceptsReservations": "False"
+  <script type="application/ld+json">
+    {
+    "@context": "https://schema.org",
+      "@type": "Restaurant",
+      "image": [
+          "https://bistrolecousteau.com/photos/1x1/photo.jpg",
+          "https://bistrolecousteau.com/photos/4x3/photo.jpg",
+          "https://bistrolecousteau.com/photos/16x9/photo.jpg"
+        ],
+      "@id": "https://bistrolecousteau.com/",
+      "name": "Bistró Le Cousteau",
+      "address": {
+      "@type": "PostalAddress",
+        "streetAddress": "Blvd. Benito Juárez 184",
+        "addressLocality": "Zona Centro",
+        "addressRegion": "Rosarito, B.C.",
+        "postalCode": "22710",
+        "addressCountry": "MX"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+        "latitude": 32.339848,
+        "longitude": -117.055794
+    },
+    "url": "http://www.example.com/restaurant-locations/manhattan",
+      "telephone": "66126122655",
+        "servesCuisine": "French",
+          "priceRange": "$$",
+            "openingHoursSpecification": [
+              {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": [
+                  "Tuesday",
+                  "Wednesday",
+                  "Thursday",
+                  "Friday",
+                  "Saturday",
+                  "Sunday"
+                ],
+                "opens": "12:00",
+                "closes": "22:00"
+              }],
+              "menu": "https://bistrolecousteau.com/menu",
+              "acceptsReservations": "False"
   }
   </script>
   <!-- =======================================================
