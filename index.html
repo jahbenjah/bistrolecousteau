@@ -7,10 +7,56 @@
   <title>Bistro Le Cousteau</title>
   <meta name="description" content="Restaurante especializada cocina francesa">
   <meta name="keywords" content="cocina francesa, restaurante en Rosarito,restaurante europeo">
-  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Satisfy|Bree+Serif|Candal|PT+Sans">
+  <link rel="stylesheet" type="text/css"
+    href="https://fonts.googleapis.com/css?family=Satisfy|Bree+Serif|Candal|PT+Sans">
   <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
+
+  "@context": "https://schema.org",
+  "@type": "Restaurant",
+  "image": [
+  "https://bistrolecousteau.com/photos/1x1/photo.jpg",
+  "https://bistrolecousteau.com/photos/4x3/photo.jpg",
+  "https://bistrolecousteau.com/photos/16x9/photo.jpg"
+  ],
+  "@id": "https://bistrolecousteau.com/",
+  "name": "Bistró Le Cousteau",
+  "address": {
+  "@type": "PostalAddress",
+  "streetAddress": "Blvd. Benito Juárez 184",
+  "addressLocality": "Zona Centro",
+  "addressRegion": "Rosarito, B.C.",
+  "postalCode": "22710",
+  "addressCountry": "MX"
+  },  
+  "geo": {
+  "@type": "GeoCoordinates",
+  "latitude": 32.3398382,
+  "longitude": -117.0579843
+  },
+  "url": "http://www.example.com/restaurant-locations/manhattan",
+  "telephone": "66126122655",
+  "servesCuisine": "French",
+  "priceRange": "$$",
+  "openingHoursSpecification": [
+  {
+  "@type": "OpeningHoursSpecification",
+  "dayOfWeek": [
+  "Tuesday",
+  "Wednesday",
+  "Thursday",
+  "Friday",
+  "Saturday",
+  "Sunday"
+  ],
+  "opens": "12:00",
+  "closes": "22:00"
+  },
+  "menu": "https://bistrolecousteau.com/menu",
+  "acceptsReservations": "False"
+  }
+  </script>
   <!-- =======================================================
     Theme Name: Delicious
     Theme URL: https://bootstrapmade.com/delicious-free-restaurant-bootstrap-theme/
@@ -54,7 +100,8 @@
       <div class="row">
         <div class="col-md-12 text-center marb-35">
           <h1 class="header-h">Bistró Le Cousteau</h1>
-          <p class="header-p">Bistró Le Cousteau abrió sus puertas en al año 2000, haciendo honor al oceanógrafo francés Jacques Cousteau, protector de ballenas
+          <p class="header-p">Bistró Le Cousteau abrió sus puertas en al año 2000, haciendo honor al oceanógrafo francés
+            Jacques Cousteau, protector de ballenas
             <br>y ecosistema del Mar de Cortes, fue así que se le llamo Bistró Le Cousteau. </p>
         </div>
         <div class="col-md-1"></div>
@@ -100,15 +147,16 @@
               <div class="col-md-6 col-sm-6 details-text">
                 <div class="content-holder">
                   <h2>Menú para llevar</h2>
-                  <p>En estos tiempos inusuales quedate en casa y continua disfrutando una deliciosa comida estilo europeo
-                     Nuestros menús que tenemos para llevar.</p>
+                  <p>En estos tiempos inusuales quedate en casa y continua disfrutando una deliciosa comida estilo
+                    europeo
+                    Nuestros menús que tenemos para llevar.</p>
                   <address>
-                              <strong>Días: </strong>
-                              De miercoles a Domingo
-                              <br>
-                              <strong>Horario: </strong>
-                              12:00 a 22:00PM
-                            </address>
+                    <strong>Días: </strong>
+                    De miercoles a Domingo
+                    <br>
+                    <strong>Horario: </strong>
+                    12:00 a 22:00PM
+                  </address>
                   <a class="btn btn-imfo btn-read-more" href="events-details.html">Más detalle</a>
                 </div>
               </div>
@@ -293,44 +341,58 @@
             <div id="errormessage"></div>
             <div class="col-md-6 col-sm-6 contact-form pad-form">
               <div class="form-group label-floating is-empty">
-                <input type="text" name="name" class="form-control" id="name" placeholder="Nombre" data-rule="minlen:4" data-msg="Por favor ingresa por lo menos 4 letras" />
+                <label for="name"></label>
+                <input type="text" name="name" class="form-control" id="name" placeholder="Nombre" data-rule="minlen:4"
+                  data-msg="Por favor ingresa por lo menos 4 letras" />
                 <div class="validation"></div>
               </div>
 
             </div>
             <div class="col-md-6 col-sm-6 contact-form">
               <div class="form-group">
-                <input type="date" class="form-control label-floating is-empty" name="date" id="date" placeholder="Date" data-rule="required" data-msg="Este es un campo requerido" />
+                <label for="date"></label>
+                <input type="date" class="form-control label-floating is-empty" name="date" id="date" placeholder="Date"
+                  data-rule="required" data-msg="Este es un campo requerido" />
                 <div class="validation"></div>
               </div>
             </div>
             <div class="col-md-6 col-sm-6 contact-form pad-form">
               <div class="form-group">
-                <input type="email" class="form-control label-floating is-empty" name="email" id="email" placeholder="Tú Correo" data-rule="email" data-msg="Por favor ingresa un correo válida" />
+                <label for="email"></label>
+                <input type="email" class="form-control label-floating is-empty" name="email" id="email"
+                  placeholder="Tú Correo" data-rule="email" data-msg="Por favor ingresa un correo válida" />
                 <div class="validation"></div>
               </div>
             </div>
             <div class="col-md-6 col-sm-6 contact-form">
               <div class="form-group">
-                <input type="time" class="form-control label-floating is-empty" name="time" id="time" placeholder="Hora" data-rule="required" data-msg="Este es un campo requerido" />
+                <label for="time"></label>
+                <input type="time" class="form-control label-floating is-empty" name="time" id="time" placeholder="Hora"
+                  data-rule="required" data-msg="Este es un campo requerido" />
                 <div class="validation"></div>
               </div>
             </div>
             <div class="col-md-6 col-sm-6 contact-form">
               <div class="form-group">
-                <input type="text" class="form-control label-floating is-empty" name="phone" id="phone" placeholder="Teléfono" data-rule="required" data-msg="Este es un campo requerido" />
+                <label for="phone"></label>
+                <input type="text" class="form-control label-floating is-empty" name="phone" id="phone"
+                  placeholder="Teléfono" data-rule="required" data-msg="Este es un campo requerido" />
                 <div class="validation"></div>
               </div>
             </div>
             <div class="col-md-6 col-sm-6 contact-form">
               <div class="form-group">
-                <input type="text" class="form-control label-floating is-empty" name="people" id="people" placeholder="Personas" data-rule="required" data-msg="Este es un campo requerido" />
+                <label for="people"></label>
+                <input type="text" class="form-control label-floating is-empty" name="people" id="people"
+                  placeholder="Personas" data-rule="required" data-msg="Este es un campo requerido" />
                 <div class="validation"></div>
               </div>
             </div>
             <div class="col-md-12 contact-form">
               <div class="form-group label-floating is-empty">
-                <textarea class="form-control" name="message" rows="5" rows="3" data-rule="required" data-msg="Por favor dejenos un mensaje" placeholder="Mensaje"></textarea>
+                <label for="message"></label>
+                <textarea class="form-control" name="message" rows="5" rows="3" data-rule="required"
+                  data-msg="Por favor dejenos un mensaje" placeholder="Mensaje"></textarea>
                 <div class="validation"></div>
               </div>
 
@@ -355,7 +417,8 @@
             <h4 class="widget-title">Bistro Le Cousteau</h4>
             <address>Blvd Benito Juárez 184<br> Zona Centro, Playas de Rosarito, B. C. 22710</address>
             <div class="social-list">
-              <a href="https://www.instagram.com/bistrolecousteau"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+              <a href="https://www.instagram.com/bistrolecousteau"><i class="fa fa-instagram"
+                  aria-hidden="true"></i></a>
               <a href="https://www.facebook.com/BistroLeCousteau"><i class="fa fa-facebook" aria-hidden="true"></i></a>
             </div>
             <p class="copyright clear-float">
