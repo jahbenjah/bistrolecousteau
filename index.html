@@ -24,9 +24,9 @@
     "@context": "https://schema.org",
       "@type": "Restaurant",
       "image": [
-          "https://bistrolecousteau.com/photos/1x1/photo.jpg",
-          "https://bistrolecousteau.com/photos/4x3/photo.jpg",
-          "https://bistrolecousteau.com/photos/16x9/photo.jpg"
+          "https://bistrolecousteau.com/img/platillo1.jpg",
+          "https://bistrolecousteau.com/img/platillo2.jpg",
+          "https://bistrolecousteau.com/img/platillo3.jpg"
         ],
       "@id": "https://bistrolecousteau.com/",
       "name": "Bistró Le Cousteau",
@@ -43,7 +43,7 @@
         "latitude": 32.339848,
         "longitude": -117.055794
     },
-    "url": "http://www.example.com/restaurant-locations/manhattan",
+    "url": "https://bistrolecousteau.com/",
       "telephone": "66126122655",
         "servesCuisine": "French",
           "priceRange": "$$",
@@ -61,7 +61,7 @@
                 "opens": "12:00",
                 "closes": "22:00"
               }],
-              "menu": "https://bistrolecousteau.com/menu",
+              "menu": "https://bistrolecousteau.com/#menu-list",
               "acceptsReservations": "False"
   }
   </script>
@@ -139,7 +139,7 @@
             </div>
           </div>
           <div class="col-md-6 col-sm-6">
-            <img src="img/res01.jpg" alt="Pizza a la leña" class="img-responsive" loading="lazy">
+            <img src="img/platillo3.jpg" alt="Pizza a la leña" class="img-responsive" loading="lazy">
           </div>
         </div>
         <div class="col-md-1"></div>
@@ -197,84 +197,108 @@
         <div class="col-md-12  text-center" id="menu-flters">
           <ul>
             <li><a class="filter active" data-filter=".menu-restaurant">Menu completo</a></li>
-            <li><a class="filter" data-filter=".breakfast">Comidas</a></li>
-            <li><a class="filter" data-filter=".lunch">Cenas</a></li>
-            <li><a class="filter" data-filter=".dinner">Especialidades</a></li>
+            <li><a class="filter" data-filter=".entradas">Entradas, Sopas y Botanas</a></li>
+            <li><a class="filter" data-filter=".crepas">Crepas</a></li>
+            <li><a class="filter" data-filter=".ensaladas">Ensaladas</a></li>
+            <li><a class="filter" data-filter=".aves">Aves y Carnes</a></li>
+            <li><a class="filter" data-filter=".pescado">Pescados y Mariscos</a></li>
+            <li><a class="filter" data-filter=".italiano">Del Rincón Italiano</a></li>
+            <li><a class="filter" data-filter=".postre">Postres y Helados</a></li>
           </ul>
         </div>
 
         <div id="menu-wrapper">
 
-          <div class="breakfast menu-restaurant">
+          <!-- Entradads -->
+          <div class="entradas menu-restaurant">
             <span class="clearfix">
-              <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">PIZZA A LA LEÑA</a>
+              <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">MARLIN AHUMADO A LA VIZCAÍNA CON TOSTADAS</a>
               <span style="left: 166px; right: 44px;" class="menu-line"></span>
-              <span class="menu-price">$20.99</span>
+              <span class="menu-price">$108.00</span>
             </span>
-            <span class="menu-subtitle">Pizza a la Leña</span>
+            <span class="menu-subtitle"></span>
           </div>
 
-          <div class="breakfast menu-restaurant">
+          <div class="entradas menu-restaurant">
             <span class="clearfix">
-              <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">PIZZA A LA LEÑA</a>
+              <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">CARACOLES <i>BOURGUIGNON</i></a>
               <span style="left: 166px; right: 44px;" class="menu-line"></span>
-              <span class="menu-price">$20.99</span>
+              <span class="menu-price">{6} $128 {12} $198</span>
             </span>
-            <span class="menu-subtitle">Pizza a la Leña</span>
+            <span class="menu-subtitle"></span>
           </div>
 
-          <div class="breakfast menu-restaurant">
+          <div class="entradas menu-restaurant">
             <span class="clearfix">
-              <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">PIZZA A LA LEÑA</a>
+              <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">CHAMPIÑONES AL AJILLO</a>
               <span style="left: 166px; right: 44px;" class="menu-line"></span>
-              <span class="menu-price">$20.99</span>
+              <span class="menu-price">$108.00</span>
             </span>
-            <span class="menu-subtitle">Pizza a la Leña</span>
+            <span class="menu-subtitle"></span>
           </div>
 
-          <div class="breakfast menu-restaurant">
+          <div class="entradas menu-restaurant">
             <span class="clearfix">
-              <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">PIZZA A LA LEÑA</a>
+              <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">CREMA DE ELOTE CON HUITLACOCHE</a>
               <span style="left: 166px; right: 44px;" class="menu-line"></span>
-              <span class="menu-price">$20.99</span>
+              <span class="menu-price">$88.00</span>
             </span>
-            <span class="menu-subtitle">Pizza a la Leña</span>
+            <span class="menu-subtitle"></span>
           </div>
 
-          <div class="lunch menu-restaurant">
+          <div class="entradas menu-restaurant">
             <span class="clearfix">
-              <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">PIZZA A LA LEÑA</a>
+              <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">AGUACATE RELLENO DE CAMARONES SALSA CHIPOTLE</a>
               <span style="left: 166px; right: 44px;" class="menu-line"></span>
-              <span class="menu-price">$20.99</span>
+              <span class="menu-price">$158.00</span>
             </span>
-            <span class="menu-subtitle">Pizza a la Leña</span>
+            <span class="menu-subtitle"></span>
           </div>
 
-          <div class="lunch menu-restaurant">
+          <div class="entradas menu-restaurant">
             <span class="clearfix">
-              <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">PIZZA A LA LEÑA</a>
+              <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">TABLA DE QUESOS</a>
               <span style="left: 166px; right: 44px;" class="menu-line"></span>
-              <span class="menu-price">$20.99</span>
+              <span class="menu-price">$158.00</span>
             </span>
-            <span class="menu-subtitle">Pizza a la Leña</span>
+            <span class="menu-subtitle"></span>
           </div>
 
-          <div class="lunch menu-restaurant">
+          <div class="entradas menu-restaurant">
             <span class="clearfix">
-              <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">PIZZA A LA LEÑA</a>
+              <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">PIED DE COCHON</a>
               <span style="left: 166px; right: 44px;" class="menu-line"></span>
-              <span class="menu-price">$20.99</span>
+              <span class="menu-price">$96.00</span>
             </span>
-            <span class="menu-subtitle">Pizza a la Leña</span>
+            <span class="menu-subtitle"></span>
           </div>
 
-          <div class="lunch menu-restaurant">
+          <!-- Crepas -->
+          <div class="crepas menu-restaurant">
             <span class="clearfix">
-              <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">PIZZA A LA LEÑA</a>
+              <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">CREPAS SAINT GERMAIN</a>
               <span style="left: 166px; right: 44px;" class="menu-line"></span>
-              <span class="menu-price">$20.99</span>
+              <span class="menu-price">$238.00</span>
             </span>
-            <span class="menu-subtitle">Pizza a la Leña</span>
+            <span class="menu-subtitle">Rellenas de Jamón, Pollo y Queso</span>
+          </div>
+
+          <div class="crepas menu-restaurant">
+            <span class="clearfix">
+              <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">CREPAS VEGETARIANAS</a>
+              <span style="left: 166px; right: 44px;" class="menu-line"></span>
+              <span class="menu-price">$178.00</span>
+            </span>
+            <span class="menu-subtitle"></span>
+          </div>
+
+          <div class="crepas menu-restaurant">
+            <span class="clearfix">
+              <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">CREPAS DE MARISCOS</a>
+              <span style="left: 166px; right: 44px;" class="menu-line"></span>
+              <span class="menu-price">$238.00</span>
+            </span>
+            <span class="menu-subtitle"></span>
           </div>
 
           <div class="lunch menu-restaurant">
@@ -307,6 +331,53 @@
           <div class="dinner menu-restaurant">
             <span class="clearfix">
               <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">PIZZA A LA LEÑA</a>
+              <span style="left: 166px; right: 44px;" class="menu-line"></span>
+              <span class="menu-price">$20.99</span>
+            </span>
+            <span class="menu-subtitle">Pizza a la Leña</span>
+          </div>
+
+          <!-- Postres -->
+
+          <div class="postre menu-restaurant">
+            <span class="clearfix">
+              <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">CREAPAS DE MANZANAS</a>
+              <span style="left: 166px; right: 44px;" class="menu-line"></span>
+              <span class="menu-price">$20.99</span>
+            </span>
+            <span class="menu-subtitle">Con cajeta y nueces</span>
+          </div>
+
+          <div class="postre menu-restaurant">
+            <span class="clearfix">
+              <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">CREPAS DE NUTELLA</a>
+              <span style="left: 166px; right: 44px;" class="menu-line"></span>
+              <span class="menu-price">$20.99</span>
+            </span>
+            <span class="menu-subtitle">Pizza a la Leña</span>
+          </div>
+
+          <div class="postre menu-restaurant">
+            <span class="clearfix">
+              <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">PROFITEROLES</a>
+              <span style="left: 166px; right: 44px;" class="menu-line"></span>
+              <span class="menu-price">$20.99</span>
+            </span>
+            <span class="menu-subtitle">PARFAIT GRAND MARNIER</span>
+          </div>
+
+          <div class="postre menu-restaurant">
+            <span class="clearfix">
+              <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">PARFAIT GRAND MARNIER</a>
+              <span style="left: 166px; right: 44px;" class="menu-line"></span>
+              <span class="menu-price">$20.99</span>
+            </span>
+            <span class="menu-subtitle">PARFAIT GRAND MARNIER</span>
+          </div>
+
+          <div class="postre menu-restaurant">
+            <span class="clearfix">
+              <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">CREME BRULEE</a>
               <span style="left: 166px; right: 44px;" class="menu-line"></span>
               <span class="menu-price">$20.99</span>
             </span>
@@ -324,8 +395,8 @@
       <div class="row">
         <div class="col-md-12 text-center">
           <h1 class="header-h">Reservaciones</h1>
-          <p class="header-p">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
-            <br>nibh euismod tincidunt ut laoreet dolore magna aliquam. </p>
+          <p class="header-p"> Celebra con nosotros tu evento especial
+            <br>Has tu reservación, deja tus datos y nosotros te contactamos. </p>
         </div>
       </div>
       <div class="row msg-row">
