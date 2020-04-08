@@ -30,7 +30,7 @@ table {
 	border-spacing: 0;
 }
 #banner{
-    background: url(../img/banner-bg.jpg) no-repeat center top;
+    background: url(../img/mesas3.jpg) no-repeat center top;
     background-size: cover;
     min-height: 630px;
 }
@@ -481,7 +481,7 @@ table {
 # Chefs
 --------------------------------------------------------------*/
 .chefs {
-    background: url("/img/chefs-bg.jpg") center center no-repeat;
+    background: url("/img/mesa2.jpg") center center no-repeat;
     background-size: cover;
     padding: 60px 0;
     position: relative;
