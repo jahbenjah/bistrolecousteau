@@ -583,3 +583,7 @@ table {
     }
   }
   
+
+  iframe {
+    border:0;  
+  }
