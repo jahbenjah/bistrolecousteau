@@ -92,11 +92,11 @@ jQuery(document).ready(function($) {
     else var str = $(this).serialize();
     $.ajax({
       type: "POST",
-      url: "contactform/contactform.php",
+      url: "https://formspree.io/xrgyzryy",
       data: str,
-      success: function(msg) {
+      success: function(data, textStatus, xhr) {
         // alert(msg);
-        if (msg == 'OK') {
+        if (xhr.status == 200) {
           $("#sendmessage").addClass("show");
           $("#errormessage").removeClass("show");
           $('.contactForm').find("input, textarea").val("");
